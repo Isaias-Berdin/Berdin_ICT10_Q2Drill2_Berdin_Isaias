@@ -10,20 +10,30 @@
     <title>Q2 Drill 2</title>
     <style>
         body {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-image: url(https://img.magnific.com/free-vector/orange-aesthetic-background-musical-instrument-frame-retro-design-vector_53876-157650.jpg?semt=ais_hybrid&w=740&q=80);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-
         h1 {
-            color: rgb(4, 50, 136);
+            color: rgb(180, 76, 35);
             text-align: center;
+            background-color: antiquewhite;
+            border: 5px solid rgb(180, 76, 35);
+            border-radius: 10px;
         }
-
         #output1 {
-            border: 5px solid rgb(17, 20, 193);
+            border: 10px solid rgb(180, 76, 35);
             box-shadow: 0px 5px 5px rgb(200, 200, 200);
             height: 700px;
             border-radius: 10px;
             font-size: 20px;
+            background-color: rgb(122, 227, 125);
+        }
+        #button {
+            color: rgb(98, 28, 2);
+            background-color: antiquewhite;
+            border: 2px solid rgb(98, 28, 2);
         }
     </style>
 </head>
@@ -32,16 +42,19 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-7">
+                <br>
                 <h1>GLEE CLUB CAST LIST</h1>
+                <br>
                 <form action="">
                     <input type="text" id="input1" placeholder="Ex: Dela Cruz">
                     <br>
                     <input type="text" id="input2" placeholder="Ex: Juan">
-                    <br>
-                    <button type="button" id="button" class="btn-info" py-click="add_glee_member">ADD MEMBER</button>
+                    <br><br>
+                    <button type="button" id="button" class="btn" py-click="add_glee_member">ADD MEMBER</button>
                 </form>
             </div>
         </div>
+        <br>
 
         <div class="row">
             <div id="output1">
