@@ -15,5 +15,5 @@ def add_glee_member(e):
     all_members = all_grades | new_member_set
     total_members = len(all_grades | new_member_set)
     member_list = "<br>".join(sorted(all_members))
-    document.getElementById("output1").innerHTML = f'All members:<br> {member_list}'
+    document.getElementById("output1").innerHTML = f'All members:<br><br> {member_list}'
     display(f'Total members: {total_members}',target="output1")
